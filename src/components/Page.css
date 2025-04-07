@@ -109,9 +109,10 @@
 }
 
 .logo {
-    max-width: 90%;
-    max-height: 90vh;
+    margin-top: 90px;
+    max-width: 80%;
+    max-height: 80vh;
     object-fit: contain;
     border-radius: 300px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
 }
