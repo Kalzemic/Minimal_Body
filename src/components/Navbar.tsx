@@ -8,6 +8,8 @@ function Navbar() {
                 <li><Link to="/">דף הבית</Link></li>
                 <li><Link to="/QApage">למה Minimal Body?</Link></li>
                 <li><Link to="/Method">איך זה עובד</Link></li>
+                <li><Link to="/Chart">מעקב תזונתי</Link></li>
+                <li><Link to="/Contact">צרו קשר</Link></li>
             </ul>
         </nav >
     );

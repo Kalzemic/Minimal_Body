@@ -1,0 +1,35 @@
+.contact-form {
+
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+
+}
+
+
+
+
+.segment {
+    margin-top: 50px;
+    color: #f39c12;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: #f39c12;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: 2px solid #f39c12;
+}
+
+.selected-option {
+    box-shadow: 0 0 10px #f39c12;
+}

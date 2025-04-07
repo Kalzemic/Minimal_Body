@@ -1,3 +1,6 @@
-FROM ubuntu:24.04
+FROM node:22
 
 WORKDIR /usr/src
+
+RUN npm install 
+

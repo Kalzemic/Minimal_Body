@@ -1,0 +1,122 @@
+[
+    {
+        "category": "בשרים ודגים",
+        "food": "חזה עוף",
+        "calories": "165",
+        "protein": "31.0"
+    },
+    {
+        "category": "בשרים ודגים",
+        "food": "פרגית/ ירך עוף",
+        "calories": "210",
+        "protein": "26.0"
+    },
+    {
+        "category": "בשרים ודגים",
+        "food": "סטייק אנטריקוט",
+        "calories": "250",
+        "protein": "26.0"
+    },
+    {
+        "category": "בשרים ודגים",
+        "food": "פילה בקר",
+        "calories": "220",
+        "protein": "24.0"
+    },
+    {
+        "category": "בשרים ודגים",
+        "food": "סלמון",
+        "calories": "230",
+        "protein": "25.0"
+    },
+    {
+        "category": "מוצרים וחלב",
+        "food": "חלב 1%",
+        "calories": "43",
+        "protein": "3.3"
+    },
+    {
+        "category": "מוצרים וחלב",
+        "food": "גבינה לבנה 3%",
+        "calories": "60",
+        "protein": "3.3"
+    },
+    {
+        "category": "מוצרים וחלב",
+        "food": "גבינה צהובה 9%",
+        "calories": "280",
+        "protein": "11.5"
+    },
+    {
+        "category": "מוצרים וחלב ",
+        "food": "קוטג 5%",
+        "calories": "120",
+        "protein": "9.0"
+    },
+    {
+        "category": "ירקות ופירות",
+        "food": "מלפפון",
+        "calories": "15",
+        "protein": "1.0"
+    },
+    {
+        "category": "ירקות ופירות",
+        "food": "גזר",
+        "calories": "41",
+        "protein": "0.9"
+    },
+    {
+        "category": "ירקות ופירות",
+        "food": "פטריות",
+        "calories": "22",
+        "protein": "2.5"
+    },
+    {
+        "category": "ירקות ופירות",
+        "food": "ברוקולי מבושל",
+        "calories": "35",
+        "protein": "2.8"
+    },
+    {
+        "category": "תוספות ",
+        "food": "אורז",
+        "calories": "170",
+        "protein": "3.0"
+    },
+    {
+        "category": "תוספות",
+        "food": "פסטה",
+        "calories": "160",
+        "protein": "5.5"
+    },
+    {
+        "category": "תוספות",
+        "food": "לחם קל",
+        "calories": "265",
+        "protein": "8.0"
+    },
+    {
+        "category": "תוספות",
+        "food": "קולה",
+        "calories": "42",
+        "protein": "0.0"
+    },
+    {
+        "category": "משקאות",
+        "food": "מיץ תפוזים 100%",
+        "calories": "45",
+        "protein": "0.9"
+    },
+    {
+        "category": "משקאות",
+        "food": "קפה עם חלב",
+        "calories": "56",
+        "protein": "1.2"
+    },
+    {
+        "category": "משקאות",
+        "food": "יין",
+        "calories": "80",
+        "protein": "0.1"
+    }
+]
