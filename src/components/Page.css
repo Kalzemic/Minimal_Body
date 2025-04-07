@@ -108,3 +108,9 @@
     font-size: 20px;
     /* Adjust icon size */
 }
+
+.logo {
+    max-width: 90%;
+    max-height: 100vh;
+    object-fit: contain;
+}

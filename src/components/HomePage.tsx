@@ -11,6 +11,9 @@ const HomePage: React.FC = () => {
         <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
             <BackgroundImage url="/minimal_body_5.png" >
                 <div className="page-content">
+                    <div className="logo">
+                        <img src="/minimal_body_logo.png" alt="Mood Light Logo" className="logo" />
+                    </div>
                     <div className="social-media">
                         <button className="Whatsapp-button"
                             onClick={() => window.open(whatsappLink, "_blank")}>
