@@ -1,6 +1,6 @@
 import './Page.css'
 import './ContactPage.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import BackgroundImage from './BackgroundImage';
 
 
@@ -8,6 +8,49 @@ const ContactPage = () => {
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
+    const [cooldown, setCooldown] = useState(false);
+    const [secondsLeft, setSecondsLeft] = useState(60);
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        const webhookUrl = "https://hooks.zapier.com/hooks/catch/XXXXX/XXXXX"; // Replace with your actual Zapier Webhook URL
+
+        const payload = { name, email, phone };
+
+        try {
+            const response = await fetch(webhookUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            });
+
+            if (response.ok) {
+                setName("");
+                setEmail("");
+                setPhone("");
+                setCooldown(true);
+                setSecondsLeft(60);
+            } else {
+                alert("שגיאה בשליחת הטופס");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("אירעה שגיאה. נסו שוב מאוחר יותר.");
+        }
+    };
+
+    useEffect(() => {
+        let timer: number;
+        if (cooldown && secondsLeft > 0) {
+            timer = setTimeout(() => setSecondsLeft(prev => prev - 1), 1000);
+        } else if (cooldown && secondsLeft === 0) {
+            setCooldown(false);
+            setSubmitted(false); // Optional: reset form state
+        }
+        return () => clearTimeout(timer);
+    }, [cooldown, secondsLeft]);
+
 
 
 
@@ -17,7 +60,7 @@ const ContactPage = () => {
                 <div className="page-content">
                     <h1>📲 רוצים לשמוע עוד? צרו איתנו קשר עוד היום!
                     </h1>
-                    <form className="contact-form" >
+                    <form className="contact-form" onSubmit={handleSubmit} >
                         <div className="segment">
                             <label>שם:</label>
                             <input type="text" value={name} onChange={(e) => setName(e.target.value)}></input>
@@ -31,7 +74,10 @@ const ContactPage = () => {
                             <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)}></input>
                         </div>
                         <div className="segment">
-                            <button type="submit" >לחצו להרשמה</button>
+                            <button type="submit" disabled={cooldown}>
+                                {cooldown ? `חכו ${secondsLeft} שניות...` : 'לחצו להרשמה'}
+                            </button>
+
                         </div>
                     </form>
                 </div>

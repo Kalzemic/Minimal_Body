@@ -8,8 +8,12 @@ interface BackgroundImageProps {
 }
 const BackgroundImage: React.FC<BackgroundImageProps> = ({ url, children }) => {
     return (
-        <div className="background-image" style={{ backgroundImage: `url(${url})` }} >
-            <div className="content">{children}</div>
+        <div className="background-container">
+            <div
+                className="background-fixed"
+                style={{ backgroundImage: `url(${url})` }}
+            />
+            <div className="background-content">{children}</div>
         </div>
     );
 }
