@@ -11,35 +11,35 @@ const ContactPage = () => {
     const [cooldown, setCooldown] = useState(false);
     const [secondsLeft, setSecondsLeft] = useState(60);
 
-    // const handleSubmit = async (e: React.FormEvent) => {
-    //     e.preventDefault();
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
 
-    //     const webhookUrl = "https://hooks.zapier.com/hooks/catch/22391451/20b26cp/";
+        const webhookUrl = "";
 
-    //     const payload = { name, email, phone };
+        const payload = { name, email, phone };
 
-    //     try {
-    //         const response = await fetch(webhookUrl, {
-    //             method: "POST",
-    //             mode: "no-cors",
-    //             headers: { "Content-Type": "application/json" },
-    //             body: JSON.stringify(payload),
-    //         });
+        try {
+            const response = await fetch(webhookUrl, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            });
 
-    //         if (response.ok) {
-    //             setName("");
-    //             setEmail("");
-    //             setPhone("");
-    //             setCooldown(true);
-    //             setSecondsLeft(60);
-    //         } else {
-    //             alert("שגיאה בשליחת הטופס");
-    //         }
-    //     } catch (error) {
-    //         console.error("Error submitting form:", error);
-    //         alert("אירעה שגיאה. נסו שוב מאוחר יותר.");
-    //     }
-    // };
+            if (response.ok) {
+                setName("");
+                setEmail("");
+                setPhone("");
+                setCooldown(true);
+                setSecondsLeft(60);
+            } else {
+                alert("שגיאה בשליחת הטופס");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("אירעה שגיאה. נסו שוב מאוחר יותר.");
+        }
+    };
 
     useEffect(() => {
         let timer: number;
@@ -60,7 +60,7 @@ const ContactPage = () => {
                 <div className="page-content">
                     <h1>📲 רוצים לשמוע עוד? צרו איתנו קשר עוד היום!
                     </h1>
-                    <form className="contact-form" >
+                    <form className="contact-form" onSubmit={handleSubmit} >
                         <div className="segment">
                             <label>שם:</label>
                             <input type="text" value={name} onChange={(e) => setName(e.target.value)}></input>

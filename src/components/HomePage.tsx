@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
         <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
             <BackgroundImage url="/minimal_body_5.png" >
                 <div className="page-content">
-                    <div className="logo">
+                    <div >
                         <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
                     </div>
                     <div className="social-media">
