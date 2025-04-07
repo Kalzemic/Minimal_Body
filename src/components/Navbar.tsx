@@ -10,7 +10,7 @@ function Navbar() {
                 <li><Link to="/Method">איך זה עובד</Link></li>
                 <li><Link to="/Chart">מעקב תזונתי</Link></li>
                 <li><Link to="/Subscriptions">המנויים שלנו</Link></li>
-                <li><Link to="/Contact">צרו קשר</Link></li>
+                <li><Link to="/Contact">טופס הרשמה</Link></li>
 
             </ul>
         </nav >
