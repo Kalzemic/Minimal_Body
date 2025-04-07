@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
 
-    background-color: black;
     /* or any page background */
     overflow-x: hidden;
 }
@@ -51,7 +50,7 @@
 }
 
 .social-media {
-    margin-top: 500px;
+
     flex-direction: row;
 }
 
@@ -111,6 +110,7 @@
 
 .logo {
     max-width: 90%;
-    max-height: 100vh;
+    max-height: 90vh;
     object-fit: contain;
+    border-radius: 300px;
 }
