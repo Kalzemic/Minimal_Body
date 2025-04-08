@@ -22,6 +22,8 @@ const ContactPage = () => {
             phone,
         };
 
+        console.log("Sending payload to Zapier:", payload);
+
         try {
             const response = await fetch(webhookUrl, {
                 method: "POST",
@@ -31,18 +33,20 @@ const ContactPage = () => {
                 body: JSON.stringify(payload),
             });
 
-            if (response.ok || response.status === 200 || response.status === 204) {
+            console.log("Response status:", response.status);
+
+            if (response.ok) {
                 setCooldown(true);
                 setSecondsLeft(60);
                 setName("");
                 setEmail("");
                 setPhone("");
             } else {
-                console.error("Webhook response not OK:", response);
+                console.error("Server responded with error:", await response.text());
                 alert("שגיאה בשליחת הטופס (שרת החזיר שגיאה)");
             }
         } catch (error) {
-            console.error("שגיאה בביצוע fetch:", error);
+            console.error("Caught error in fetch:", error);
             alert("אירעה שגיאה. נסו שוב מאוחר יותר.");
         }
     };
