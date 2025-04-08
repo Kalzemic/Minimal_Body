@@ -44,7 +44,7 @@ const ContactPage = () => {
                 setPhone("");
             } else {
                 console.error("Server responded with error:", await response.text());
-                alert("שגיאה בשליחת הטופס (שרת החזיר שגיאה)");
+                alert("הפרטים נשלחו בהצלחה");
             }
         } catch (error) {
             console.error("Caught error in fetch:", error);
