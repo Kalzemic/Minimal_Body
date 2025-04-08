@@ -7,7 +7,6 @@ const CalorieChart = () => {
             <BackgroundImage url="/minimal_body_1.png">
                 <div className="page-content">
                     <div className="table-container">
-                        <h2 className="table-title"></h2>
                         <div className="table-wrapper"></div>
                         <table className="table">
                             <thead className="bg-gray-100">
