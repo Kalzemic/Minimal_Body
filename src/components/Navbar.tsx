@@ -7,7 +7,7 @@ function Navbar() {
             <ul>
                 <li><Link to="/">דף הבית</Link></li>
                 <li><Link to="/QApage">למה Minimal Body?</Link></li>
-                <li><Link to="/Method">איך זה עובד</Link></li>
+                <li><Link to="/Method">השיטה שלנו</Link></li>
                 <li><Link to="/Chart">מעקב תזונתי</Link></li>
                 <li><Link to="/Subscriptions">המנויים שלנו</Link></li>
                 <li><Link to="/Contact">טופס הרשמה</Link></li>
