@@ -13,6 +13,8 @@
     /* Align text to the right for Hebrew */
     opacity: 0;
     animation: fadeIn 0.8s ease-in 1.2s forwards;
+    font-style: "Rubik Vynil";
+    overflow-x: auto;
 }
 
 @keyframes fadeIn {
