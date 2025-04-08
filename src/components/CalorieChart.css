@@ -30,10 +30,9 @@
 .table {
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
+    text-align: center;
     font-size: 0.875rem;
     color: #4b5563;
-    background-color: rgba(0, 0, 0, 0.7);
     overflow-y: auto;
     /* Tailwind's gray-600 */
 }
