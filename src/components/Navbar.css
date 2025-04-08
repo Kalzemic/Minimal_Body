@@ -7,7 +7,7 @@
     height: 80px;
     background: rgba(0, 0, 0, 0.6);
     /* Semi-transparent background */
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-align: center;
     z-index: 1000;
     /* Align text to the right for Hebrew */
