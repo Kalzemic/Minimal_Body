@@ -36,7 +36,7 @@ const ContactPage = () => {
 
             console.log("Response status:", response.status);
 
-            if (response.ok) {
+            if (response.ok || response.status === 204 || response.status === 200) {
                 setCooldown(true);
                 setSecondsLeft(60);
                 setName("");
@@ -44,7 +44,7 @@ const ContactPage = () => {
                 setPhone("");
             } else {
                 console.error("Server responded with error:", await response.text());
-                alert("הפרטים נשלחו בהצלחה");
+                alert("שגיאה בשליחת הפרטים");
             }
         } catch (error) {
             console.error("Caught error in fetch:", error);
