@@ -4,7 +4,7 @@ import './Page.css'
 const HomePage: React.FC = () => {
 
     const whatsappLink = "...";
-    const InstaLink = "...";
+    const InstaLink = "https://www.instagram.com/minimalbodyil/";
 
 
     return (
