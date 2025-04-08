@@ -40,6 +40,7 @@
     background: linear-gradient(to right, #a855f7, #FFB300);
     color: white;
     text-transform: uppercase;
+    align-items: center;
     font-size: 0.75rem;
 }
 
