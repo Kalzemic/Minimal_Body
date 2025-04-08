@@ -1,9 +1,8 @@
 /* TableComponent.css */
 
 .table-container {
-    padding: 40px;
-    width: 1200px;
-    max-width: 1500px;
+    width: 70%;
+    padding: 10px;
     margin: 20 auto;
     overflow: auto;
 }
