@@ -14,29 +14,35 @@ const ContactPage = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const webhookUrl = "";
+        const webhookUrl = "https://hooks.zapier.com/hooks/catch/22391451/20u3p6w/";
 
-        const payload = { name, email, phone };
+        const payload = {
+            name,
+            email,
+            phone,
+        };
 
         try {
             const response = await fetch(webhookUrl, {
                 method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                },
                 body: JSON.stringify(payload),
             });
 
-            if (response.ok) {
+            if (response.ok || response.status === 200 || response.status === 204) {
+                setCooldown(true);
+                setSecondsLeft(60);
                 setName("");
                 setEmail("");
                 setPhone("");
-                setCooldown(true);
-                setSecondsLeft(60);
             } else {
-                alert("שגיאה בשליחת הטופס");
+                console.error("Webhook response not OK:", response);
+                alert("שגיאה בשליחת הטופס (שרת החזיר שגיאה)");
             }
         } catch (error) {
-            console.error("Error submitting form:", error);
+            console.error("שגיאה בביצוע fetch:", error);
             alert("אירעה שגיאה. נסו שוב מאוחר יותר.");
         }
     };
