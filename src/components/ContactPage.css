@@ -11,12 +11,12 @@
 
 .segment {
     margin-top: 50px;
-    color: #FFB300;
+    color: #ff7b00;
     margin-bottom: 50px;
 }
 
 button {
-    background-color: #FFB300;
+    background-color: #ff7b00;
 }
 
 button:hover {
