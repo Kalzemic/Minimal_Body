@@ -63,7 +63,9 @@
 
 .social-media {
 
+    display: flex;
     flex-direction: row;
+    gap: 30px;
 
 }
 
@@ -77,25 +79,24 @@
     /* WhatsApp green */
     color: white;
     border: none;
-    padding: 12px 12px;
-    font-size: 40px;
+    padding: 12px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 40px;
-    /* Rounded button */
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-
+    margin-top: 15px;
+    height: 74px;
 }
 
 .whatsapp-icon {
     width: 50px;
-    /* or whatever size you want */
+
     height: 50px;
 }
 
 .Instagram-icon {
     width: 50px;
-    /* or whatever size you want */
     height: 50px;
 }
 
@@ -111,7 +112,6 @@
     font-size: 20px;
     cursor: pointer;
     border-radius: 40px;
-    /* Rounded button */
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     margin-top: 15px;
@@ -128,10 +128,7 @@
     /* Slight hover scaling */
 }
 
-.whatsapp-icon {
-    font-size: 20px;
-    /* Adjust icon size */
-}
+
 
 .logo {
     margin-top: 80px;
