@@ -20,7 +20,6 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/QApage" element={<QAPage />} />
           <Route path="/Method" element={<MethodPage />} />
-          <Route path="/Chart" element={<CalorieChart />} />
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/Subscriptions" element={<Subscriptions />} />
         </Routes>
