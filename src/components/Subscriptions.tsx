@@ -6,7 +6,7 @@ const Subscriptions: React.FC = () => {
     return (
 
         <div className="image-container">
-            <BackgroundImage url="/minimal_body_2.png">
+            <BackgroundImage url="/minimal_body_1.png">
                 <div className="sub-page">
                     <h1>המנויים שלנו</h1>
 
