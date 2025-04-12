@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import HomePage from './components/HomePage'
 import QAPage from './components/QAPage'
 import MethodPage from './components/MethodPage'
-import CalorieChart from './components/CalorieChart'
+
 import ContactPage from './components/ContactPage'
 import Subscriptions from './components/Subscriptions'
 
