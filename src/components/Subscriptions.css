@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 40px;
     max-width: 700px;
-    width: 50%;
+    width: 70vw;
     /* Never use 100vw here */
     padding: 40px;
     overflow-x: hidden;
@@ -43,6 +43,7 @@
     min-height: 100vh;
     display: flex;
     width: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     gap: 60px;
+
 }
