@@ -37,7 +37,7 @@
 }
 
 .table thead {
-    background: linear-gradient(to right, #a855f7, #FFB300);
+    background: linear-gradient(to right, #a855f7, #ff7b00);
     color: white;
     text-transform: uppercase;
     align-items: center;
@@ -51,7 +51,7 @@
 
 .table tbody {
     background-color: rgba(0, 0, 0, 0.7);
-    color: #FFB300;
+    color: #ff7b00;
 }
 
 .table tbody tr {
@@ -60,10 +60,7 @@
     transition: background-color 0.2s;
 }
 
-.table tbody tr:hover {
-    background-color: #faf5ff;
-    /* light purple hover */
-}
+
 
 .text-right {
     text-align: right;
