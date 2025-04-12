@@ -3,8 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import HomePage from './components/HomePage'
-import QAPage from './components/QAPage'
-import MethodPage from './components/MethodPage'
 
 import ContactPage from './components/ContactPage'
 import Subscriptions from './components/Subscriptions'
@@ -18,8 +16,7 @@ function App() {
       <div className="main-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/QApage" element={<QAPage />} />
-          <Route path="/Method" element={<MethodPage />} />
+
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/Subscriptions" element={<Subscriptions />} />
         </Routes>
