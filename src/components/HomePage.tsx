@@ -17,12 +17,12 @@ const HomePage: React.FC = () => {
                     <div className="social-media">
                         <button className="Whatsapp-button"
                             onClick={() => window.open(whatsappLink, "_blank")}>
-                            הצטרפו אלינו ב-WhatsApp
+
                             <FaWhatsapp className="whatsapp-icon" />
                         </button>
                         <button className="Instagram-button"
                             onClick={() => window.open(InstaLink, "_blank")}>
-                            עמוד האינסטגרם שלנו
+
                             <FaInstagram className="Instagram-icon" />
                         </button>
                     </div>
