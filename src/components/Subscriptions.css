@@ -1,35 +1,48 @@
 .cards-grid {
     display: flex;
     flex-direction: column;
-    /* Stacks cards in a vertical column */
     align-items: center;
-    /* Aligns cards to the right */
-    gap: 20px;
-    padding: 40px;
-    max-width: 700px;
-    width: 100%;
-    /* margin-right: auto;
-    margin-left: auto; */
-    overflow-x: hidden;
-    position: relative;
     justify-content: center;
-    /* Ensures no horizontal overflow */
+    gap: 40px;
+    max-width: 700px;
+    width: 50%;
+    /* Never use 100vw here */
+    padding: 40px;
+    overflow-x: hidden;
     box-sizing: border-box;
-    scrollbar-width: thin;
+
+
 }
 
 .sub-card {
-    width: 70%;
-    border-radius: 20px;
+    width: 30%;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     text-align: center;
     position: center;
-    color: #FFB300;
+    color: #ff7b00;
     background: rgb(0, 0, 0, 0.8);
     transition: transform 0.3s ease-in-out;
     flex-shrink: 0;
     overflow: hidden;
+
+}
+
+.sub-page {
+    color: #ff7b00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    animation: fadeIn 0.5s ease-in forwards;
+    z-index: 100;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    overflow-y: auto;
+    gap: 60px;
 }
