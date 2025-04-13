@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 40px;
     max-width: 700px;
-    width: 75vw;
+    width: 75%;
     /* Never use 100vw here */
     padding: 40px;
     overflow-x: hidden;
@@ -48,4 +48,9 @@
     gap: 60px;
 
 
+}
+
+.sub-page h1 {
+    background-color: black;
+    box-shadow: 0 0 40px 40px black;
 }
