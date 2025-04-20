@@ -15,18 +15,7 @@ const HomePage: React.FC = () => {
                         <div >
                             <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
                         </div>
-                        <div className="social-media">
-                            <button className="Whatsapp-button"
-                                onClick={() => window.open(whatsappLink, "_blank")}>
 
-                                <FaWhatsapp className="whatsapp-icon" />
-                            </button>
-                            <button className="Instagram-button"
-                                onClick={() => window.open(InstaLink, "_blank")}>
-
-                                <FaInstagram className="Instagram-icon" />
-                            </button>
-                        </div>
                     </div>
 
                 </BackgroundImage>

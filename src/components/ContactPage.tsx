@@ -70,7 +70,7 @@ const ContactPage = () => {
             <div className="image-container">
                 <BackgroundImage url="minimal_body_3.png">
                     <div className="page-content">
-                        <h1>📲 רוצים לשמוע עוד? צרו איתנו קשר עוד היום!
+                        <h1>📲 להרשמה
                         </h1>
                         <form className="contact-form" onSubmit={handleSubmit} >
                             <div className="segment">
