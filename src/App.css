@@ -29,10 +29,10 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     z-index: 1000;
     bottom: 10px;
-    left: 10px;
+    left: 19px;
 }
 
 .Whatsapp-button {
