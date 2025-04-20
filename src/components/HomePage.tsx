@@ -1,10 +1,8 @@
 import BackgroundImage from "./BackgroundImage";
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 import './Page.css'
 const HomePage: React.FC = () => {
 
-    const whatsappLink = "https://wa.me/972525772886";
-    const InstaLink = "https://www.instagram.com/minimalbodyil/";
 
 
     return (
