@@ -66,36 +66,36 @@ const ContactPage = () => {
 
 
     return (
-        <div className="mainpage">
-            <div className="image-container">
-                <BackgroundImage url="minimal_body_3.png">
-                    <div className="page-content">
-                        <h1>📲 להרשמה
-                        </h1>
-                        <form className="contact-form" onSubmit={handleSubmit} >
-                            <div className="segment">
-                                <label>שם:</label>
-                                <input type="text" value={name} onChange={(e) => setName(e.target.value)}></input>
-                            </div>
-                            <div className="segment">
-                                <label>דואר אלקטרוני:</label>
-                                <input type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
-                            </div>
-                            <div className="segment">
-                                <label>מספר טלפון:</label>
-                                <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)}></input>
-                            </div>
-                            <div className="segment">
-                                <button type="submit" disabled={cooldown}>
-                                    {cooldown ? `חכו ${secondsLeft} שניות...` : 'לחצו להרשמה'}
-                                </button>
 
-                            </div>
-                        </form>
-                    </div>
-                </BackgroundImage>
-            </div>
+        <div className="image-container">
+            <BackgroundImage url="minimal_body_3.png">
+                <div className="page-content">
+                    <h1>📲 להרשמה
+                    </h1>
+                    <form className="contact-form" onSubmit={handleSubmit} >
+                        <div className="segment">
+                            <label>שם:</label>
+                            <input type="text" value={name} onChange={(e) => setName(e.target.value)}></input>
+                        </div>
+                        <div className="segment">
+                            <label>דואר אלקטרוני:</label>
+                            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                        </div>
+                        <div className="segment">
+                            <label>מספר טלפון:</label>
+                            <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)}></input>
+                        </div>
+                        <div className="segment">
+                            <button type="submit" disabled={cooldown}>
+                                {cooldown ? `חכו ${secondsLeft} שניות...` : 'לחצו להרשמה'}
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+            </BackgroundImage>
         </div>
+
 
     );
 }
