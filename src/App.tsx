@@ -21,12 +21,12 @@ function App() {
         </Routes>
       </div>
       <div className="social-media">
-        <button className="Whatsapp-button"
+        <button className="Whatsapp-button" aria-label="קישור לואצאפ עם מאמן"
           onClick={() => window.open(whatsappLink, "_blank")}>
 
           <FaWhatsapp className="whatsapp-icon" />
         </button>
-        <button className="Instagram-button"
+        <button className="Instagram-button" aria-label="קישור לאינסטגרם שלנו"
           onClick={() => window.open(InstaLink, "_blank")}>
 
           <FaInstagram className="Instagram-icon" />

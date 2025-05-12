@@ -74,19 +74,19 @@ const ContactPage = () => {
                     </h1>
                     <form className="contact-form" onSubmit={handleSubmit} >
                         <div className="segment">
-                            <label>שם:</label>
-                            <input type="text" value={name} onChange={(e) => setName(e.target.value)}></input>
+                            <label htmlFor="shem" >שם:</label>
+                            <input type="email" id="shem" value={name} onChange={(e) => setName(e.target.value)}></input>
                         </div>
                         <div className="segment">
-                            <label>דואר אלקטרוני:</label>
-                            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                            <label htmlFor="email">דואר אלקטרוני:</label>
+                            <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
                         </div>
                         <div className="segment">
-                            <label>מספר טלפון:</label>
-                            <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)}></input>
+                            <label htmlFor="telephone">מספר טלפון:</label>
+                            <input type="text" id="telephone" value={phone} onChange={(e) => setPhone(e.target.value)}></input>
                         </div>
                         <div className="segment">
-                            <button type="submit" disabled={cooldown}>
+                            <button aria-label="כפתור הגשת הטופס" type="submit" disabled={cooldown}>
                                 {cooldown ? `חכו ${secondsLeft} שניות...` : 'לחצו להרשמה'}
                             </button>
 
