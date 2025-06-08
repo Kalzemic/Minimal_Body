@@ -17,6 +17,7 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
+    filter: blur(6px) brightness(0.7) saturate(1.1);
 }
 
 /* 👇 This is your darkening layer */
@@ -29,12 +30,16 @@
     background-color: rgba(0, 0, 0, 0.3);
     /* Adjust darkness here */
     z-index: 1;
+
 }
 
 .background-content {
     position: relative;
     z-index: 2;
     overflow-y: auto;
+    height: 99%;
+    overflow-x: hidden;
+
 }
 
 

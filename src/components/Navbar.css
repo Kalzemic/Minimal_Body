@@ -1,21 +1,87 @@
 .navbar {
     position: fixed;
-    align-items: center;
     top: 0;
     right: 0;
     width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.6);
-    /* Semi-transparent background */
-    padding: 10px 15px;
-    text-align: center;
+    height: 130px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1px 20px;
     z-index: 1000;
-    /* Align text to the right for Hebrew */
     opacity: 0;
     animation: fadeIn 0.8s ease-in 1.2s forwards;
-    font-style: "Rubik Vynil";
     overflow-x: auto;
     overflow-y: hidden;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Allow wrapping on mobile */
+    height: 100%;
+    position: relative;
+    gap: 10px;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-center ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-center ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        height: auto;
+        /* Allow nav height to grow */
+        padding: 10px;
+    }
+}
+
+.navbar-left .logo {
+    height: 120px;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    border-radius: 200px;
+}
+
+@media (max-width: 768px) {
+    .navbar-left .logo {
+        height: 70px;
+        margin-bottom: 0;
+    }
+}
+
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Assistant';
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
 }
 
 @keyframes fadeIn {
@@ -26,39 +92,4 @@
     to {
         opacity: 1;
     }
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: flex;
-    display: flex;
-    gap: 20px;
-    /* Ensures menu items align to the right */
-    padding-right: 20px;
-    /* Adds spacing from the right */
-}
-
-.navbar li {
-
-    display: inline-block;
-    /* Ensures proper spacing */
-}
-
-.navbar a {
-    color: #ff7b00;
-    text-decoration: none;
-    font-size: 18px;
-    display: inline-block;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    padding: 10px 15px;
-    /* Add padding to make hover easier */
-}
-
-.navbar a:hover {
-    transform: scale(1.2);
-    /* Increases size on hover */
-
-    /* Changes text color */
 }

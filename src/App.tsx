@@ -5,6 +5,7 @@ import './App.css'
 import HomePage from './components/HomePage'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Subscriptions from './components/Subscriptions'
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="main-container">
         <Routes>
           <Route path="/" element={<HomePage />} />

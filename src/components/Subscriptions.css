@@ -1,34 +1,24 @@
 .cards-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    max-width: 700px;
-    width: 75%;
-    /* Never use 100vw here */
-    padding: 40px;
-    overflow-x: hidden;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
     overflow-y: auto;
 
 }
 
 .sub-card {
-    width: 70vw;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2rem;
+    border-radius: 20px;
     text-align: center;
-    position: center;
-    color: #ff7b00;
-    background: rgb(0, 0, 0, 0.8);
-    transition: transform 0.3s ease-in-out;
-    flex-shrink: 0;
-    overflow: hidden;
-
+    color: white;
+    width: 100%;
+    /* let the grid or container manage width */
+    max-width: 300px;
+    /* optional max width for aesthetics */
+    box-sizing: border-box;
 }
 
 .sub-page {
@@ -39,6 +29,7 @@
     text-align: center;
     margin-top: 70px;
     margin-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.05);
     animation: fadeIn 0.5s ease-in forwards;
     z-index: 100;
     display: flex;
@@ -46,8 +37,9 @@
     height: 85vh;
     /* Full screen height */
     overflow-y: auto;
-    /* Enables scroll if content is taller */
 
+
+    padding: 0 1rem;
     gap: 60px;
 
 
@@ -56,4 +48,16 @@
 .sub-page h1 {
     background-color: black;
     box-shadow: 0 0 40px 40px black;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    /* Aligns text nicely */
+    gap: 8px;
+    justify-content: center;
+}
+
+.price h1 {
+    color: #ff7b00;
 }
