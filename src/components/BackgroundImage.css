@@ -39,6 +39,7 @@
     overflow-y: auto;
     height: 99%;
     overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
