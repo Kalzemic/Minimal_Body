@@ -67,6 +67,23 @@ const HomePage: React.FC = () => {
                     </BackgroundImage>
                 </div>
             </section>
+
+            <footer className="contact-footer">
+                <div className="footer-content">
+                    <span>
+                        📍 <a href="https://maps.google.com/?q=מתחם המרינה מול, אשקלון" target="_blank" rel="noopener noreferrer">
+                            מתחם המרינה מול, אשקלון
+                        </a></span><br />
+                    <span>📞 טלפון: 052-577-2886</span><br />
+                    <span>✉️ אימייל: minimalbody24@gmail.com</span><br />
+                    <div className="footer-legal">
+                        <span>© {new Date().getFullYear()} Minimal Body — כל הזכויות שמורות</span><br />
+                        <span className="signature">Made by Michael Zizov</span>
+                    </div>
+                </div>
+            </footer>
+
+
         </div >
 
 

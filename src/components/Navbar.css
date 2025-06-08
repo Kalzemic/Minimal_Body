@@ -46,6 +46,15 @@
 
 }
 
+@media (max-width: 768px) {
+    .navbar-left .logo {
+        height: 70px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 .navbar a {
     color: rgb(255, 255, 255);
     text-decoration: none;
