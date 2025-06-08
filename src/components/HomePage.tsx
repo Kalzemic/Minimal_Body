@@ -4,9 +4,11 @@ import BackgroundImage from "./BackgroundImage";
 import ContactPage from "./ContactPage";
 import './Page.css'
 import Subscriptions from "./Subscriptions";
+import { useScrollReveal } from "../hooks/UseScrollReveal";
 const HomePage: React.FC = () => {
 
     const WhatsappLink = "https://wa.me/972525772886";
+    useScrollReveal();
 
 
     return (
@@ -14,7 +16,7 @@ const HomePage: React.FC = () => {
             <section id="home">
                 <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
                     <BackgroundImage url="/minimal_body_5.png" >
-                        <div className="page-content">
+                        <div className="page-content scroll-reveal">
                             <div >
                                 <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
                                 <div className="page-button">
@@ -36,7 +38,7 @@ const HomePage: React.FC = () => {
             <section id="why_us">
                 <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
                     <BackgroundImage url="minimal_body_4.png" >
-                        <div className="page-content">
+                        <div className="page-content scroll-reveal">
                             <h1>למה Minimal Body?</h1>
                             <h2> ✅ אימוני כוח בלבד – בלי הסחות דעת, בלי בלגן, רק תוצאות.</h2>
                             <h2>✅ מכשור מתקדם – ציוד מקצועי שמבטיח אימון מדויק ובטוח.</h2>
@@ -52,7 +54,7 @@ const HomePage: React.FC = () => {
             <section id="method">
                 <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
                     <BackgroundImage url="/minimal_body_2.png">
-                        <div className="page-content">
+                        <div className="page-content scroll-reveal">
                             <h1>איך זה עובד?</h1>
                             <h2>🔹 אימון היכרות מותאם אישית – כדי להבין את הצרכים והמטרות שלך.</h2>
                             <h2>🔹 שיבוץ לשעות קבועות – מה שמסייע לך להתמיד ולראות תוצאות.</h2>

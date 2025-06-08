@@ -2,16 +2,17 @@ import { useState } from 'react';
 import BackgroundImage from './BackgroundImage';
 import './Page.css'
 import './Subscriptions.css'
+import { useScrollReveal } from '../hooks/UseScrollReveal';
 
 const Subscriptions: React.FC = () => {
     const [plan, setPlan] = useState("ק")
     const WhatsappLink = "https://wa.me/972525772886?text=";
-
+    useScrollReveal();
     return (
 
         <div className="image-container">
             <BackgroundImage url="/minimal_body_1.png">
-                <div className="sub-page">
+                <div className="sub-page scroll-reveal">
                     <h1>המנויים שלנו</h1>
 
                     <div className="sub-card">

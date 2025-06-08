@@ -5,7 +5,14 @@
     gap: 2rem;
     margin-top: 3rem;
     overflow-y: auto;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
 
+.cards-grid.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .sub-card {
@@ -31,7 +38,7 @@
     margin-top: 70px;
     margin-bottom: 70px;
     background-color: rgba(0, 0, 0, 0.05);
-    animation: fadeIn 0.5s ease-in forwards;
+    /* animation: fadeIn 0.5s ease-in forwards; */
     z-index: 100;
     display: flex;
     width: 100%;
@@ -42,8 +49,14 @@
 
     padding: 0 1rem;
     gap: 60px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
 
-
+.sub-page.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .sub-page h1 {

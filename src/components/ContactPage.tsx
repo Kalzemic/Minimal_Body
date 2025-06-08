@@ -2,6 +2,7 @@ import './Page.css'
 import './ContactPage.css'
 import { useEffect, useState } from 'react';
 import BackgroundImage from './BackgroundImage';
+import { useScrollReveal } from '../hooks/UseScrollReveal';
 
 
 const ContactPage = () => {
@@ -10,7 +11,7 @@ const ContactPage = () => {
     const [phone, setPhone] = useState("")
     const [cooldown, setCooldown] = useState(false);
     const [secondsLeft, setSecondsLeft] = useState(60);
-
+    useScrollReveal();
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -69,7 +70,7 @@ const ContactPage = () => {
 
         <div className="image-container">
             <BackgroundImage url="minimal_body_3.png">
-                <div className="page-content">
+                <div className="page-content scroll-reveal">
                     <h1>📲 להרשמה
                     </h1>
                     <form className="contact-form" onSubmit={handleSubmit} >
