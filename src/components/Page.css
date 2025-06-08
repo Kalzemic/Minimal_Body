@@ -81,3 +81,27 @@
     border-radius: 300px;
     background-color: rgba(0, 0, 0, 0.89);
 }
+
+.page-button button {
+    color: white;
+    background-color: black;
+    /* or your theme color */
+    border: none;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #ff7b00;
+}
+
+.page-button button:hover {
+    background-color: #ff7b00;
+}
+
+.page-button button:visited,
+.page-button button:focus,
+.page-button button:active {
+    color: white;
+    outline: none;
+}
