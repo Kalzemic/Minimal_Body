@@ -10,15 +10,16 @@
 
 .sub-card {
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 2rem;
+    padding: 1.2rem;
     border-radius: 20px;
     text-align: center;
     color: white;
     width: 100%;
     /* let the grid or container manage width */
-    max-width: 300px;
+    max-width: 250px;
     /* optional max width for aesthetics */
     box-sizing: border-box;
+    font-size: 0.9rem;
 }
 
 .sub-page {
