@@ -76,7 +76,7 @@ const ContactPage = () => {
                     <form className="contact-form" onSubmit={handleSubmit} >
                         <div className="segment">
                             <label htmlFor="shem" >שם:</label>
-                            <input type="email" id="shem" value={name} onChange={(e) => setName(e.target.value)}></input>
+                            <input type="text" id="shem" value={name} onChange={(e) => setName(e.target.value)}></input>
                         </div>
                         <div className="segment">
                             <label htmlFor="email">דואר אלקטרוני:</label>

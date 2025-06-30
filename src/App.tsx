@@ -13,6 +13,7 @@ function App() {
   const InstaLink = "https://www.instagram.com/minimalbodyil/";
 
   return (
+
     <BrowserRouter>
       <Navbar />
       <div className="main-container">
