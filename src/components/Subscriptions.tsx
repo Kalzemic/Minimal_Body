@@ -13,18 +13,20 @@ const Subscriptions: React.FC = () => {
                 <div className="sub-page scroll-reveal">
                     <h1>המנויים שלנו</h1>
 
+
                     <div className="sub-card">
-                        <h1>Limitless</h1>
+                        <h1>Limited</h1>
                         <div className="price">
-                            <h1>439 ש"ח</h1>
-                            <h3>\לחודש</h3>
+                            <h1>399 ש"ח</h1>
+                            <h3>לחודש</h3>
                         </div>
-                        <h2>מנוי חודשי ללא התחחייבות</h2>
+                        <h2> מנוי חודשי עם התחייבות לחצי שנה</h2>
+                        <p className='side-note'>דמי ביטול בעלות של 200 ש"ח</p>
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
                                 onClick={() => {
-                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי ללא התחייבות בעלות 439 שקלים לחודש";
+                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי חודשי בעלות 399 שקלים על התחייבות לחצי שנה ";
                                     window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
                                 }}
                             >
@@ -34,18 +36,17 @@ const Subscriptions: React.FC = () => {
                     </div>
 
                     <div className="sub-card">
-                        <h1>Limited</h1>
+                        <h1>Limitless</h1>
                         <div className="price">
-                            <h1>399 ש"ח</h1>
-                            <h3>\לחודש</h3>
+                            <h1>439 ש"ח</h1>
+                            <h3>לחודש</h3>
                         </div>
-                        <h2> מנוי חודשי עם התחייבות לחצי שנה</h2>
-                        <p className='side-note'>דמי ביטול בעלות של 200 ש"ח</p>
+                        <h2>מנוי חודשי ללא התחחייבות</h2>
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
                                 onClick={() => {
-                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי חודשי בעלות 399 שקלים על התחייבות לחצי שנה ";
+                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי ללא התחייבות בעלות 439 שקלים לחודש";
                                     window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
                                 }}
                             >
