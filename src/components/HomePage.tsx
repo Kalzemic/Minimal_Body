@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
                         <span>© {new Date().getFullYear()} Minimal Body — כל הזכויות שמורות</span><br />
                         <span
                             className="signature"
-                        >Made by <button onClick={() => window.open('http://www.archweb.co.il')} >ArchWeb</button></span>
+                        >Made by <button style={{ color: '#ff7b00', background: 'black' }} onClick={() => window.open('http://www.archweb.co.il')} >ArchWeb</button></span>
                     </div>
                 </div>
             </footer>
