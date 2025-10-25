@@ -78,7 +78,9 @@ const HomePage: React.FC = () => {
                     <span>✉️ אימייל: minimalbody24@gmail.com</span><br />
                     <div className="footer-legal">
                         <span>© {new Date().getFullYear()} Minimal Body — כל הזכויות שמורות</span><br />
-                        <span className="signature">Made by ArchWeb</span>
+                        <span
+                            className="signature"
+                        >Made by <button onClick={() => window.open('http://www.archweb.co.il')} >ArchWeb</button></span>
                     </div>
                 </div>
             </footer>
