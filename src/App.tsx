@@ -6,6 +6,7 @@ import HomePage from './components/HomePage'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Subscriptions from './components/Subscriptions'
 import Navbar from './components/Navbar';
+import AccessibilityMenu from './components/AccessibilityMenu';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
 
     <BrowserRouter>
       <Navbar />
+      <AccessibilityMenu />
       <div className="main-container">
         <Routes>
           <Route path="/" element={<HomePage />} />

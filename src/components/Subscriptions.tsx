@@ -15,7 +15,7 @@ const Subscriptions: React.FC = () => {
 
 
                     <div className="sub-card">
-                        <h1>Limited</h1>
+                        <h1>Limitless</h1>
                         <div className="price">
                             <h1>399 ש"ח</h1>
                             <h3>לחודש</h3>
