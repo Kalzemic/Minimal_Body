@@ -41,7 +41,7 @@ const Subscriptions: React.FC = () => {
                             <h1>439 ש"ח</h1>
                             <h3>לחודש</h3>
                         </div>
-                        <h2>מנוי חודשי ללא התחחייבות</h2>
+                        <h2>מנוי חודשי ללא התחייבות</h2>
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
