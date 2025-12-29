@@ -17,14 +17,14 @@
 
 .sub-card {
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 20px;
     text-align: center;
     color: white;
     width: 100%;
     /* let the grid or container manage width */
     max-width: 400px;
-    padding:50px;
+    /* padding:50px; */
     /* optional max width for aesthetics */
     box-sizing: border-box;
     font-size: 0.8rem;
@@ -65,10 +65,11 @@
     box-shadow: 0 0 40px 40px black;
 }
 
-.sub-description{
-    font-size:1.1rem;
-    font-weight:600;
+.sub-description {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
+
 .price {
     display: flex;
     align-items: baseline;
@@ -87,14 +88,15 @@
 
 
 
-@media(max-width:1000px){
+@media(max-width:1000px) {
 
-    .sub-page h1{
+    .sub-page h1 {
         font-size: 2rem;
     }
-    .sub-card{
-        width:75%;
-        padding:1.3rem;
-        
+
+    .sub-card {
+        width: 75%;
+        padding: 1.3rem;
+
     }
 }
