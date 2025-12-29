@@ -11,7 +11,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-content">
                     <div className="navbar-left">
-                        <img src="minimal_body_logo.png" alt="Company Logo" className="logo" />
+                        <img src="minimal_body_logo.png" alt="Company Logo" className="nav-logo" />
                     </div>
 
                     {/* Desktop nav */}

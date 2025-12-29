@@ -14,15 +14,21 @@ const HomePage: React.FC = () => {
     return (
         <div className="mainpage">
             <section id="home">
-                <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
+                <div className="image-container">
                     <BackgroundImage url="/minimal_body_5.png" >
                         <div className="page-content scroll-reveal">
-                            <div >
-                                <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
-                                <div className="page-button">
-                                    <button aria-label="קישור לואצאפ עם מאמן" onClick={() => window.open(WhatsappLink, "_blank")}> הצטרפו לתנועה</button>
+                            
+                                <div className='logo-container'>
+                                    <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
+                                    <div className='logo-text'>
+                                    <p>אימוני כח מדויקים</p>
+                                    <p>למי שאין לו זמן להתבלבל</p>
+                                    </div>
                                 </div>
-                            </div>
+                                <div className="page-button">
+                                    <button aria-label="קישור לואצאפ עם מאמן" onClick={() => window.open(WhatsappLink, "_blank")}>קביעת אימון היכרות</button>
+                                </div>
+                            
 
                         </div>
 
@@ -38,14 +44,17 @@ const HomePage: React.FC = () => {
             <section id="why_us">
                 <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
                     <BackgroundImage url="minimal_body_4.png" >
-                        <div className="page-content scroll-reveal">
-                            <h1>למה Minimal Body?</h1>
-                            <h2><span> ✅ אימוני כוח בלבד – בלי הסחות דעת, בלי בלגן, רק תוצאות.</span></h2>
-                            <h2><span>✅ מכשור מתקדם – ציוד מקצועי שמבטיח אימון מדויק ובטוח.</span></h2>
-                            <h2>✅ תוכנית מותאמת אישית – כל אימון מותאם לך אישית ומבוסס נתונים.</h2>
-                            <h2>✅ מעקב התקדמות חכם – מערכת דיגיטלית שעוקבת אחר כל חזרה ומשקל שלך.</h2>
-                            <h2>✅ ללא התחייבות ארוכת טווח – ניתן לבטל בכל שלב בהתראה של 30 יום.</h2>
-                            <h2>✅ כמות מתאמנים מוגבלת – בלי עומס, בלי המתנה למכשירים.</h2>
+                        <div className="page-content why-page scroll-reveal">
+                            <div className='why-title'>
+                                <h1>למה Minimal Body?</h1>
+                            </div>
+                            <div className='why-text'>
+                            <h2><span> ✅ אימוני כוח מדויק – בלי חוגים.</span></h2>
+                            <h2>✅ תוכנית אימונים אישית באפליקציה.</h2>
+                            <h2>✅ מאמן נוכח לאורך כל האימון.</h2>
+                            <h2>✅ עד 12 מתאמנים בחלל</h2>
+                            <h2>✅ אימון ממוקד של עד שעה</h2>
+                            </div>
                         </div>
                     </BackgroundImage>
                 </div>
@@ -55,6 +64,7 @@ const HomePage: React.FC = () => {
                     <BackgroundImage url="/minimal_body_2.png">
                         <div className="page-content scroll-reveal">
                             <h1>איך זה עובד?</h1>
+                            <div className='method-text'>
                             <h2>🔹 אימון היכרות מותאם אישית – כדי להבין את הצרכים והמטרות שלך.</h2>
                             <h2>🔹 שיבוץ לשעות קבועות – מה שמסייע לך להתמיד ולראות תוצאות.</h2>
                             <h2>🔹 בניית תוכנית אימונים מדויקת – המבוססת על שיטת Minimal Body, עם תרגילים שמשרתים אך ורק את המטרה שלך.
@@ -63,6 +73,7 @@ const HomePage: React.FC = () => {
                             </h2>
                             <h2>🔹 אין חובה לשלב אירובי – אימוני כוח מדויקים יספיקו לתוצאות מעולות.
                             </h2>
+                            </div>
                         </div>
                     </BackgroundImage>
                 </div>

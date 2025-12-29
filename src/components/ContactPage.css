@@ -8,11 +8,19 @@
 
 
 
-
 .segment {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
     margin-top: 50px;
     color: #ff7b00;
     margin-bottom: 50px;
+}
+
+.segment label{
+    width:5rem;
 }
 
 button {
@@ -32,4 +40,21 @@ button:focus {
 
 .selected-option {
     box-shadow: 0 0 10px #f39c12;
+}
+
+
+
+@media(max-width:1000px){
+
+.contact-title{
+    margin-bottom:1.5rem;
+    font-size: 0.6rem;   
+}
+.contact-form {
+    width:14rem;
+}
+
+.segment{
+    flex-direction: column;
+}
 }

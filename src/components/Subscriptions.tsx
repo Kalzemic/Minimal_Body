@@ -11,7 +11,7 @@ const Subscriptions: React.FC = () => {
         <div className="image-container">
             <BackgroundImage url="/minimal_body_1.png">
                 <div className="sub-page scroll-reveal">
-                    <h1>המנויים שלנו</h1>
+                    <h1>המנוי של Minimal Body</h1>
 
 
                     <div className="sub-card">
@@ -20,8 +20,12 @@ const Subscriptions: React.FC = () => {
                             <h1>399 ש"ח</h1>
                             <h3>לחודש</h3>
                         </div>
-                        <h2> מנוי חודשי עם התחייבות לחצי שנה</h2>
-                        <p className='side-note'>דמי ביטול בעלות של 200 ש"ח</p>
+                        <div className='sub-description'>
+                            <p>מסגרת אימוני כח מלאה</p>
+                            <p>עם ליווי, מעקב ותכנית אישית</p>
+                        </div>
+                        <p className='side-note'>מתחדש אוטומטית באשראי</p>
+                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p>
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
@@ -30,11 +34,11 @@ const Subscriptions: React.FC = () => {
                                     window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
                                 }}
                             >
-                                לבחירה לחצו כאן
+                                קביעת אימון היכרות
                             </button>
                         </div>
                     </div>
-
+{/* 
                     <div className="sub-card">
                         <h1>Limitless</h1>
                         <div className="price">
@@ -53,7 +57,7 @@ const Subscriptions: React.FC = () => {
                                 לבחירה לחצו כאן
                             </button>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* <div className="sub-card">
                         <h1>Unlimited</h1>

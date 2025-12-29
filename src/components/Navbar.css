@@ -37,17 +37,17 @@
     padding: 0;
 }
 
-.navbar-left .logo {
+.navbar-left .nav-logo {
     height: 200px;
     object-fit: contain;
     margin-left: 10px;
-    margin-bottom: 80px;
+    
     border-radius: 200px;
 
 }
 
 @media (max-width: 768px) {
-    .navbar-left .logo {
+    .navbar-left .nav-logo {
         height: 70px;
         margin: 0;
         padding: 0;

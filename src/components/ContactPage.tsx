@@ -71,8 +71,11 @@ const ContactPage = () => {
         <div className="image-container">
             <BackgroundImage url="minimal_body_3.png">
                 <div className="page-content scroll-reveal">
-                    <h1>📲 להרשמה
+                    <div className='contact-title'>
+                    <h1>
+                        בדיקת התאמה + אימון היכרות
                     </h1>
+                    </div>
                     <form className="contact-form" onSubmit={handleSubmit} >
                         <div className="segment">
                             <label htmlFor="shem" >שם:</label>
@@ -88,7 +91,7 @@ const ContactPage = () => {
                         </div>
                         <div className="segment">
                             <button aria-label="כפתור הגשת הטופס" type="submit" disabled={cooldown}>
-                                {cooldown ? `חכו ${secondsLeft} שניות...` : 'לחצו להרשמה'}
+                                {cooldown ? `חכו ${secondsLeft} שניות...` : 'קביעת אימון היכרות'}
                             </button>
 
                         </div>
