@@ -27,9 +27,9 @@
     align-items: center;
     /* Center horizontally */
     justify-content: center;
-  
+
     text-align: center;
-  
+
     /* animation: fadeIn 0.5s ease-in forwards; */
     z-index: 100;
     height: 100%;
@@ -73,26 +73,28 @@
 }
 
 
-.logo-container{
-    
-    background-color:black;
+.logo-container {
+
+    background-color: black;
+    margin-top: 130px;
     width: 18%;
-    height: 20rem;
+    height: 18rem;
     border-radius: 500px;
-    padding:100px;
+    padding: 100px;
 }
 
-.logo-text{
-    margin-top:-30px;
-    color:whitesmoke;
+.logo-text {
+    margin-top: -50px;
+    color: whitesmoke;
     font-size: large;
     font-weight: 900;
 }
 
 .logo {
     margin-top: -10px;
-    height:20rem;
-    width:20rem;
+    height: 16rem;
+    width: 16rem;
+
     object-fit: contain;
     border-radius: 300px;
     background-color: rgba(0, 0, 0, 0.89);
@@ -100,7 +102,7 @@
 
 .page-button button {
     color: white;
-    margin-top:50px;
+    margin-top: 10px;
     background-color: black;
     /* or your theme color */
     border: none;
@@ -125,25 +127,27 @@
 
 
 
-.why-title{
+.why-title {
 
-    font-size:0.8rem;
+    font-size: 0.8rem;
 }
-.why-text{
-    display:flex;
+
+.why-text {
+    display: flex;
     flex-direction: column;
 }
-.why-text h2{
-    display:flex;
+
+.why-text h2 {
+    display: flex;
     align-items: center;
     justify-content: start;
-    height:4rem;
-    width:40rem;
+    height: 4rem;
+    width: 40rem;
 
 }
 
-.method-text h2{
-    display:flex;
+.method-text h2 {
+    display: flex;
     align-items: center;
     justify-content: start;
 }
@@ -187,48 +191,50 @@
 }
 
 
-@media(max-width: 1000px){
-    .logo-container{
-        margin-top:6rem;
+@media(max-width: 1000px) {
+    .logo-container {
+        margin-top: 6rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       height:9.5rem;
-       width:9.5rem;
+        height: 9.5rem;
+        width: 9.5rem;
     }
 
-    .logo{
-        margin-top:2rem;
-        height:15rem;
-        width:15rem;
+    .logo {
+        margin-top: 2rem;
+        height: 15rem;
+        width: 15rem;
     }
 
-    .logo-text{
+    .logo-text {
         font-size: 0.75rem;
         font-weight: bolder;
-        color:white;
+        color: white;
     }
 
-    .page-button button{
+    .page-button button {
         margin-top: 2rem;
-        width:10rem;
-        height:3rem;
+        width: 10rem;
+        height: 3rem;
     }
 
-    .why-page{
+    .why-page {
         justify-content: start;
     }
-    .why-title{
+
+    .why-title {
         margin-top: 3rem;
     }
 
-    .why-text{
+    .why-text {
         margin-top: 3rem;
-        height:2rem;
-        width:20rem;
+        height: 2rem;
+        width: 20rem;
     }
-    .why-text h2{
-        width:20rem;
+
+    .why-text h2 {
+        width: 20rem;
     }
 }
