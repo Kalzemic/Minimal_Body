@@ -119,7 +119,7 @@ const Subscriptions: React.FC = () => {
                     </div> 
                     <div className="sub-card">
                         <h1>Add-on</h1>
-                        <h2>תפריט תזונה מותאים אישית</h2>
+                        <h2>תפריט תזונה מותאם אישית</h2>
                         <div className="price">
                             <h1>250 ש"ח</h1>
                             <h3>תשלום חד פעמי</h3>
