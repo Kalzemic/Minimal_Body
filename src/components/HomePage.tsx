@@ -43,7 +43,8 @@ const HomePage: React.FC = () => {
             <section id='faq'>
             <div className="image-container" style={{ width: "100vw", backgroundColor:'black',height:'auto' }}>
                     <div className="page-content scroll-reveal" style={{marginBottom:'5%'}}>
-                        <h1>שאלות נפוצות</h1>
+                        <h1 style={{ marginTop:'15%'}}>שאלות נפוצות</h1>
+                        <video className='faq-video'src='/faq/faq_video.mp4' controls/>
                         <div className='faq-text'>
                             <div className='faq-section'>
                                 <h2>זה חדר כושר או שיעורי קבוצה?</h2>
@@ -70,7 +71,6 @@ const HomePage: React.FC = () => {
                                 <p>מרינה מול אשקלון, קומה 2, ממש ליד מסעדת "המרסה".</p>
                             </div>
                         </div>
-                        <video className='faq-video'src='/faq/faq_video.mp4' controls/>
                     </div>
                 </div>
             </section>

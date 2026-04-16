@@ -296,4 +296,7 @@
     .faq-text h2{
         color:#ff7b00;
     }
+    .faq-text p{
+        color: white;
+    }
 }
