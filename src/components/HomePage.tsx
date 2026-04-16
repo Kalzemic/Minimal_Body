@@ -14,25 +14,24 @@ const HomePage: React.FC = () => {
     return (
         <div className="mainpage">
             <section id="home">
-                <div className="image-container">
-                    <BackgroundImage url="/minimal_body_5.png" >
-                        <div className="page-content scroll-reveal">
-                            
-                                <div className='logo-container'>
-                                    <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
-                                    <div className='logo-text'>
-                                    <p>אימוני כח מדויקים</p>
-                                    <p>למי שאין לו זמן להתבלבל</p>
-                                    </div>
-                                </div>
-                                <div className="page-button">
-                                    <button aria-label="קישור לואצאפ עם מאמן" onClick={() => window.open(WhatsappLink, "_blank")}>קביעת אימון היכרות</button>
-                                </div>
-                            
-
-                        </div>
-
-                    </BackgroundImage>
+                <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
+                    <video className='hero-video' src='/hero/background_video.mp4'autoPlay loop muted playsInline/>
+                    <div className="page-content scroll-reveal">
+                            <div className='logo-container'>
+                                <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
+                                {/* <div className='logo-text'>
+                                <p>אימוני כח מדויקים</p>
+                                <p>למי שאין לו זמן להתבלבל</p>
+                                </div> */}
+                            </div>
+                            <div className='concept-text'>
+                                <h1>הדרך שלך לגוף חטוב וחזק, בלי העומס של חדר כושר</h1>
+                                <h2>מתחם פרימיום המוגבל ל-10 מתאמנים בשעה בלבד. ליווי אישי וגישה 24/7 דרך האפליקציה</h2>
+                            </div>
+                            <div className="page-button" style={{marginTop:'10px'}}>
+                                <button aria-label="קישור לואצאפ עם מאמן" onClick={() => window.open(WhatsappLink, "_blank")}>קביעת אימון היכרות</button>
+                            </div>
+                    </div>
                 </div>
             </section>
             <section id="signup">
@@ -78,7 +77,14 @@ const HomePage: React.FC = () => {
                     </BackgroundImage>
                 </div>
             </section>
-
+            <section id='faq'>
+            <div className="image-container" style={{ width: "100vw", height: "100vh", backgroundColor:'black' }}>
+                    <div className="page-content scroll-reveal">
+                        <h1>שאלות נפוצות</h1>
+                        <video className='faq-video'src='/faq/faq_video.mp4' controls/>
+                    </div>
+                </div>
+            </section>
             <footer className="contact-footer">
                 <div className="footer-content">
                     <span>

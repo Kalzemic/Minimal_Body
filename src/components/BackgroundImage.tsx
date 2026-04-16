@@ -4,6 +4,7 @@ import "./BackgroundImage.css";
 interface BackgroundImageProps {
     url: string;
     children?: React.ReactNode;
+
 }
 
 const BackgroundImage: React.FC<BackgroundImageProps> = ({ url, children }) => {

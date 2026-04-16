@@ -22,6 +22,7 @@ function Navbar() {
                             <li><a href="#subscriptions">אפשרויות מנוי</a></li>
                             <li><a href="#why_us">למה Minimal Body?</a></li>
                             <li><a href="#method">השיטה שלנו</a></li>
+                            <li><a href="#faq">שאלות נפוצות</a></li>
                         </ul>
                     </div>
 
@@ -40,6 +41,7 @@ function Navbar() {
                     <li><a href="#subscriptions" onClick={toggleSidebar}>אפשרויות מנוי</a></li>
                     <li><a href="#why_us" onClick={toggleSidebar}>למה Minimal Body?</a></li>
                     <li><a href="#method" onClick={toggleSidebar}>השיטה שלנו</a></li>
+                    <li><a href="#faq" onClick={toggleSidebar}>שאלות נפוצות</a></li>
                 </ul>
             </div>
         </>
