@@ -139,7 +139,7 @@
 
 .page-button button {
     color: white;
-    margin-top: 10px;
+    
     background-color: black;
     /* or your theme color */
     border: none;
@@ -265,7 +265,7 @@
         margin-top: 20rem;
     }
     .page-button button {
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         width: 10rem;
         height: 3rem;
     }
@@ -293,5 +293,8 @@
     }
     .faq-text{
         text-align: start;
+    }
+    .faq-text h2{
+        color:#ff7b00;
     }
 }
