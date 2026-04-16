@@ -70,7 +70,6 @@ const Subscriptions: React.FC = () => {
 
                      <div className="sub-card">
                         <h1>Commit</h1>
-                        <h2>מנוי ללא הגבלת כניסה</h2>
                         <div className="price">
                             <h1>300 ש"ח</h1>
                             <h3>לחודש</h3>
