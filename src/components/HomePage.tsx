@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
                             </div>
                             <div className='concept-text'>
                                 <h1>הדרך שלך לגוף חטוב וחזק, בלי העומס של חדר כושר</h1>
-                                <h2>מתחם פרימיום המוגבל ל-10 מתאמנים בשעה בלבד. ליווי אישי וגישה 24/7 דרך האפליקציה</h2>
+                                <h2 style={{fontFamily:'Assistant'}}>מתחם פרימיום המוגבל ל-10 מתאמנים בשעה בלבד. ליווי אישי וגישה 24/7 דרך האפליקציה</h2>
                             </div>
                             <div className="page-button" >
                                 <button aria-label="קישור לואצאפ עם מאמן" onClick={() => window.open(WhatsappLink, "_blank")}>קביעת אימון היכרות</button>
