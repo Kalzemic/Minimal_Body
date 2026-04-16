@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
             <section id="home">
                 <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
                     <video className='hero-video' src='/hero/background_video.mp4'autoPlay loop muted playsInline/>
-                    <div className="page-content scroll-reveal">
+                    <div className="page-content scroll-reveal" >
                             <div className='logo-container'>
                                 <img src="/minimal_body_logo.png" alt="minimal body Logo" className="logo" />
                                 {/* <div className='logo-text'>

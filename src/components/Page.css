@@ -46,7 +46,9 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: black;
+    filter:brightness(50%);
     /* object-position: 50% 50%; */
     z-index:-1; 
       
@@ -69,6 +71,7 @@
 }
 .concept-text{
     margin-top: 200px;
+    width:30%;
 }
 
 .page-content h2 {
