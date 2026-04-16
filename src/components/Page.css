@@ -265,6 +265,7 @@
     }
     .concept-text{
         margin-top: 20rem;
+        width:100%;
     }
     .page-button button {
         margin-top: -1rem;
