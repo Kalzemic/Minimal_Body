@@ -40,6 +40,40 @@ const HomePage: React.FC = () => {
             <section id="subscriptions">
                 <Subscriptions />
             </section>
+            <section id='faq'>
+            <div className="image-container" style={{ width: "100vw", backgroundColor:'black',height:'auto' }}>
+                    <div className="page-content scroll-reveal" style={{marginBottom:'5%'}}>
+                        <h1>שאלות נפוצות</h1>
+                        <div className='faq-text'>
+                            <div className='faq-section'>
+                                <h2>זה חדר כושר או שיעורי קבוצה?</h2>
+                                <p>שילוב של השניים – מתאמנים בקבוצות של עד 10 אנשים, כשכל אחד עובד על תוכנית אישית עם ליווי מאמן.</p>
+                            </div>
+                            <div className='faq-section'>
+                                <h2>יש אירובי?</h2>
+                                <p>יש אופני ספינינג מקצועיים. המיקוד שלנו הוא אימוני כוח ככלי היעיל ביותר לחיטוב, בשילוב אינטרוולים.</p>
+                            </div>
+                            <div className='faq-section'>
+                                <h2>זה חדר כושר או שיעורי קבוצה?</h2>
+                                <p>שילוב של השניים – מתאמנים בקבוצות של עד 10 אנשים, כשכל אחד עובד על תוכנית אישית עם ליווי מאמן.</p>
+                            </div>
+                            <div className='faq-section'>
+                                <h2>איך עובד ה-24/7? </h2>
+                                <p>הגישה מתבצעת דרך אפליקציה שפותחת את דלת הסטודיו בכל שעה שנוח לך.</p>
+                            </div>
+                            <div className='faq-section'>
+                                <h2>אתם עוזרים בתזונה?</h2>
+                                <p>כן, ניתן להוסיף בניית תפריט אישי ומדידות היקפים כחלק מהתהליך.</p>
+                            </div>
+                            <div className='faq-section'>
+                               <h2>איפה אתם נמצאים?</h2>
+                                <p>מרינה מול אשקלון, קומה 2, ממש ליד מסעדת "המרסה".</p>
+                            </div>
+                        </div>
+                        <video className='faq-video'src='/faq/faq_video.mp4' controls/>
+                    </div>
+                </div>
+            </section>
             <section id="why_us">
                 <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
                     <BackgroundImage url="minimal_body_4.png" >
@@ -77,19 +111,11 @@ const HomePage: React.FC = () => {
                     </BackgroundImage>
                 </div>
             </section>
-            <section id='faq'>
-            <div className="image-container" style={{ width: "100vw", height: "100vh", backgroundColor:'black' }}>
-                    <div className="page-content scroll-reveal">
-                        <h1>שאלות נפוצות</h1>
-                        <video className='faq-video'src='/faq/faq_video.mp4' controls/>
-                    </div>
-                </div>
-            </section>
             <footer className="contact-footer">
                 <div className="footer-content">
                     <span>
                         📍 <a href="https://maps.google.com/?q=מתחם המרינה מול, אשקלון" target="_blank" rel="noopener noreferrer">
-                            מתחם המרינה מול, אשקלון
+                        מרינה מול, קומה 2 (ליד המרסה)
                         </a></span><br />
                     <span>📞 טלפון: 052-577-2886</span><br />
                     <span>✉️ אימייל: minimalbody24@gmail.com</span><br />

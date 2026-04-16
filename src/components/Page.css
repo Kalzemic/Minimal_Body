@@ -124,7 +124,7 @@
 }
 
 .logo {
-    margin-top: -10px;
+    margin-top: 20px;
     height: 20rem;
     width: 20rem;
     object-fit: contain;
@@ -195,7 +195,10 @@
     border-radius: 20px;
     object-fit: contain;
 }
-
+.faq-text{
+    margin-bottom:50px;
+    width:80%;
+}
 .contact-footer {
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
@@ -247,7 +250,7 @@
     }
 
     .logo {
-        margin-top: 0;
+        margin-top: 10rem;
         height: 15rem;
         width: 15rem;
         /* background: none; */
@@ -258,9 +261,11 @@
         font-weight: bolder;
         color: white;
     }
-
+    .concept-text{
+        margin-top: 20rem;
+    }
     .page-button button {
-        margin-top: 5rem;
+        margin-top: 1rem;
         width: 10rem;
         height: 3rem;
     }
@@ -285,5 +290,8 @@
 
     .faq-video{
         height:35rem;
+    }
+    .faq-text{
+        text-align: start;
     }
 }
