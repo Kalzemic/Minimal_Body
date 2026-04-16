@@ -25,7 +25,9 @@ const HomePage: React.FC = () => {
                                 </div> */}
                             </div>
                             <div className='concept-text'>
-                                <h1>הדרך שלך לגוף חטוב וחזק, בלי העומס של חדר כושר</h1>
+                                <h1>הדרך שלך לגוף 
+                                 <span style={{color:"#ff7b00"}}> חטוב וחזק</span>  </h1>
+                                    <h1> בלי העומס של חדר כושר</h1>
                                 <h2 style={{fontFamily:'Assistant'}}>מתחם פרימיום המוגבל ל-10 מתאמנים בשעה בלבד. ליווי אישי וגישה 24/7 דרך האפליקציה</h2>
                             </div>
                             <div className="page-button" >
