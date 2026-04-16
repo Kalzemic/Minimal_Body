@@ -263,13 +263,16 @@
         font-weight: bolder;
         color: white;
     }
+    .hero-video{
+        object-fit: cover;
+    }
     .concept-text{
         margin-top: 20rem;
         width:100%;
     }
     .page-button button {
         margin-top: -1rem;
-        width: 10rem;
+        width: 12rem;
         height: 3rem;
     }
 

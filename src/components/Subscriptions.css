@@ -61,8 +61,9 @@
 }
 
 .sub-page h1 {
+    margin-top:5rem;
     background-color: black;
-    /* box-shadow: 0 0 40px 40px black; */
+    box-shadow: 0 0 40px 40px black;
 }
 
 .sub-description {
