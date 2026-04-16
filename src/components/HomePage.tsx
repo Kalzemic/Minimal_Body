@@ -44,7 +44,7 @@ const HomePage: React.FC = () => {
             <div className="image-container" style={{ width: "100vw", backgroundColor:'black',height:'auto' }}>
                     <div className="page-content scroll-reveal" style={{marginBottom:'5%'}}>
                         <h1 style={{ marginTop:'15%'}}>שאלות נפוצות</h1>
-                        <video className='faq-video'src='/faq/faq_video.mp4' controls/>
+                        <video poster='/minimal_body_logo.png' className='faq-video'src='/faq/faq_video.mp4' controls/>
                         <div className='faq-text'>
                             <div className='faq-section'>
                                 <h2>זה חדר כושר או שיעורי קבוצה?</h2>
