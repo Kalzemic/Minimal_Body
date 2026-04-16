@@ -111,7 +111,7 @@ const HomePage: React.FC = () => {
                     </BackgroundImage>
                 </div>
             </section>
-            <footer className="contact-footer">
+            <footer className="contact-footer" style={{backgroundColor:'black'}}>
                 <div className="footer-content">
                     <span>
                         📍 <a href="https://maps.google.com/?q=מתחם המרינה מול, אשקלון" target="_blank" rel="noopener noreferrer">
