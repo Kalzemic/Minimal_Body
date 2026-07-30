@@ -16,10 +16,10 @@ const Subscriptions: React.FC = () => {
 
                     <div className="sub-card">
                         <h1>Limitless</h1>
-                        <div className="price">
+                        {/* <div className="price">
                             <h1>440 ש"ח</h1>
                             <h3>לחודש</h3>
-                        </div>
+                        </div> */}
                         <div className='sub-description'>
                             <p>מנוי חודשי ללא התחייבות</p>
                             <p>מסגרת אימוני כח מלאה</p>
@@ -43,10 +43,10 @@ const Subscriptions: React.FC = () => {
 
                     <div className="sub-card">
                         <h1>Freedom</h1>
-                        <div className="price">
+                        {/* <div className="price">
                             <h1>400 ש"ח</h1>
                             <h3>לחודש</h3>
-                        </div>
+                        </div> */}
                         <div className='sub-description'>
                             <p>התחייבות לחצי שנה</p>
                             <p>מסגרת אימוני כח מלאה</p>
@@ -70,10 +70,10 @@ const Subscriptions: React.FC = () => {
 
                      <div className="sub-card">
                         <h1>Commit</h1>
-                        <div className="price">
+                        {/* <div className="price">
                             <h1>300 ש"ח</h1>
                             <h3>לחודש</h3>
-                        </div>
+                        </div> */}
                         <div className='sub-description'>
                             <p>התחייבות לשנה</p>
                             <p>מסגרת אימוני כח מלאה</p>
@@ -98,10 +98,10 @@ const Subscriptions: React.FC = () => {
                     <div className="sub-card">
                         <h1>Access Only</h1>
                         <h2>למתאמנים מנוסים, ללא ליווי מאמן</h2>
-                        <div className="price">
+                        {/* <div className="price">
                             <h1>250 ש"ח</h1>
                             <h3>לחודש</h3>
-                        </div>
+                        </div> */}
                         <p className='side-note'>מתחדש אוטומטית באשראי</p>
                         <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p>
                         <div className="page-button">
@@ -109,25 +109,6 @@ const Subscriptions: React.FC = () => {
                                 aria-label="קישור לואצאפ עם מאמן"
                                 onClick={() => {
                                     const msg = "שלום, אני מעוניין להצטרף עם מנוי 250 שקלים לחודש";
-                                    window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
-                                }}
-                            >
-                                לבחירה לחצו כאן
-                            </button>
-                        </div>
-                    </div> 
-                    <div className="sub-card">
-                        <h1>Add-on</h1>
-                        <h2>תפריט תזונה מותאם אישית</h2>
-                        <div className="price">
-                            <h1>250 ש"ח</h1>
-                            <h3>תשלום חד פעמי</h3>
-                        </div>
-                        <div className="page-button">
-                            <button
-                                aria-label="קישור לואצאפ עם מאמן"
-                                onClick={() => {
-                                    const msg = " שלום, אני מעוניין בתפריט תזונה חד פעמי בעלות 250 שקלים";
                                     window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
                                 }}
                             >
