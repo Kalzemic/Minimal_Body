@@ -26,8 +26,8 @@ const Subscriptions: React.FC = () => {
                             <p>עם ליווי, מעקב ותכנית אישית</p>
                             
                         </div>
-                        <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p>
+                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
+                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
@@ -53,8 +53,8 @@ const Subscriptions: React.FC = () => {
                             <p>עם ליווי, מעקב ותכנית אישית</p>
                             
                         </div>
-                        <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p>
+                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
+                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
@@ -80,8 +80,8 @@ const Subscriptions: React.FC = () => {
                             <p>עם ליווי, מעקב ותכנית אישית</p>
                             
                         </div>
-                        <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p>
+                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
+                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
@@ -102,8 +102,8 @@ const Subscriptions: React.FC = () => {
                             <h1>250 ש"ח</h1>
                             <h3>לחודש</h3>
                         </div> */}
-                        <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p>
+                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
+                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
                         <div className="page-button">
                             <button
                                 aria-label="קישור לואצאפ עם מאמן"
