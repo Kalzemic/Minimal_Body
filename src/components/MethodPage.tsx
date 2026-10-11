@@ -1,25 +1,55 @@
-import BackgroundImage from "./BackgroundImage";
-import './Page.css'
+import "../styles/MethodPage.css";
 
+const steps = [
+    {
+        title: "אימון היכרות מותאם אישית",
+        description: "כדי להבין את הצרכים והמטרות שלך."
+    },
+    {
+        title: "שיבוץ לשעות קבועות",
+        description: "מה שמסייע לך להתמיד ולראות תוצאות."
+    },
+    {
+        title: "בניית תוכנית אימונים מדויקת",
+        description: "המבוססת על שיטת Minimal Body, עם תרגילים שמשרתים אך ורק את המטרה שלך."
+    },
+    {
+        title: "אימון של שעה בלבד",
+        description: "עם מנוחה והתאוששות אופטימלית בין אימונים."
+    },
+    {
+        title: "אין חובה לשלב אירובי",
+        description: "אימוני כוח מדויקים יספיקו לתוצאות מעולות."
+    }
+];
 
-const MethodPage: React.FC = () => {
+export default function MethodPage() {
     return (
-        <div className="image-container" style={{ width: "100vw", height: "100vh" }}>
-            <BackgroundImage url="/minimal_body_2.png">
-                <div className="page-content">
-                    <h1>איך זה עובד?</h1>
-                    <h2>🔹 אימון היכרות מותאם אישית – כדי להבין את הצרכים והמטרות שלך.</h2>
-                    <h2>🔹 שיבוץ לשעות קבועות – מה שמסייע לך להתמיד ולראות תוצאות.</h2>
-                    <h2>🔹 בניית תוכנית אימונים מדויקת – המבוססת על שיטת Minimal Body, עם תרגילים שמשרתים אך ורק את המטרה שלך.
+        <div className="method-page" dir="rtl">
+            <div className="method-container">
+                <header className="method-header">
+                    <h2>
+                        איך זה עובד<span>?</span>
                     </h2>
-                    <h2>🔹 אימון של שעה בלבד – עם מנוחה והתאוששות אופטימלית בין אימונים.
-                    </h2>
-                    <h2>🔹 אין חובה לשלב אירובי – אימוני כוח מדויקים יספיקו לתוצאות מעולות.
-                    </h2>
+                </header>
+
+                <div className="method-timeline">
+                {steps.map((step, index) => (
+                    <article className="method-step" key={index}>
+                        <div className="method-marker">
+                            <span>
+                                {String(index + 1).padStart(2, "0")}
+                            </span>
+                        </div>
+
+                        <div className="method-step-content">
+                            <h3>{step.title}</h3>
+                            <p>{step.description}</p>
+                        </div>
+                    </article>
+                ))}
                 </div>
-            </BackgroundImage>
+            </div>
         </div>
     );
-};
-
-export default MethodPage;
+}

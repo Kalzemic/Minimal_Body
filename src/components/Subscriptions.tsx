@@ -1,125 +1,103 @@
-import BackgroundImage from './BackgroundImage';
-import './Page.css';
-import './Subscriptions.css';
-import { useScrollReveal } from '../hooks/UseScrollReveal';
+import "../styles/Subscriptions.css";
 
-const Subscriptions: React.FC = () => {
-    const WhatsappLink = "https://wa.me/972525772886?text=";
-    useScrollReveal();
+const subscriptions = [
+    {
+        name: "Limitless",
+        commitment: "ללא התחייבות",
+        description: "מנוי חודשי עם גמישות מלאה",
+        coaching: true,
+        message: "שלום, אני מעוניין בפרטים על מנוי Limitless",
+    },
+    {
+        name: "Freedom",
+        commitment: "6 חודשים",
+        description: "מסגרת אימונים קבועה לחצי שנה",
+        coaching: true,
+        message: "שלום, אני מעוניין בפרטים על מנוי Freedom",
+        featured: true,
+    },
+    {
+        name: "Commit",
+        commitment: "12 חודשים",
+        description: "מסגרת אימונים לטווח ארוך",
+        coaching: true,
+        message: "שלום, אני מעוניין בפרטים על מנוי Commit",
+    },
+    {
+        name: "Access Only",
+        commitment: "גישה עצמאית",
+        description: "למתאמנים מנוסים ללא ליווי מאמן",
+        coaching: false,
+        message: "שלום, אני מעוניין בפרטים על מנוי Access Only",
+    },
+];
+
+export default function Subscriptions() {
+    const whatsappNumber = "972525772886";
 
     return (
-        <div className="image-container">
-            <BackgroundImage url="/minimal_body_1.png">
-                <div className="sub-page scroll-reveal">
-                    <h1>המנוי של Minimal Body</h1>
+        <div className="subscriptions-page" dir="rtl">
+            <div className="subscriptions-container">
+                <header className="subscriptions-header">
+                    <h2>
+                        המסלול שלך<span>.</span>
+                    </h2>
+                    <p>בחרו את המסלול שמתאים לכם</p>
+                </header>
 
+                <div className="subscriptions-grid">
+                    {subscriptions.map((sub) => (
+                        <article
+                            key={sub.name}
+                            className={`subscription-card ${
+                                sub.featured ? "subscription-featured" : ""
+                            }`}
+                        >
+                            <div className="subscription-card-header">
+                                <h3 dir="ltr">{sub.name}</h3>
+                                <span className="subscription-commitment">
+                                    {sub.commitment}
+                                </span>
+                            </div>
 
-                    <div className="sub-card">
-                        <h1>Limitless</h1>
-                        {/* <div className="price">
-                            <h1>440 ש"ח</h1>
-                            <h3>לחודש</h3>
-                        </div> */}
-                        <div className='sub-description'>
-                            <p>מנוי חודשי ללא התחייבות</p>
-                            <p>מסגרת אימוני כח מלאה</p>
-                            <p>עם ליווי, מעקב ותכנית אישית</p>
-                            
-                        </div>
-                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
-                        <div className="page-button">
-                            <button
-                                aria-label="קישור לואצאפ עם מאמן"
-                                onClick={() => {
-                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי חודשי בעלות 440 שקלים  ";
-                                    window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
-                                }}
+                            <p className="subscription-description">
+                                {sub.description}
+                            </p>
+
+                            <div className="subscription-features">
+                                <div>
+                                    <span className="subscription-check">✓</span>
+                                    מסגרת אימוני כוח
+                                </div>
+
+                                <div>
+                                    <span className="subscription-check">✓</span>
+                                    {sub.coaching
+                                        ? "ליווי מאמן אישי"
+                                        : "אימון עצמאי"}
+                                </div>
+
+                                {sub.coaching && (
+                                    <div>
+                                        <span className="subscription-check">✓</span>
+                                        תוכנית אימונים אישית
+                                    </div>
+                                )}
+                            </div>
+
+                            <a
+                                className="subscription-button"
+                                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(sub.message)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                קביעת אימון היכרות
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="sub-card">
-                        <h1>Freedom</h1>
-                        {/* <div className="price">
-                            <h1>400 ש"ח</h1>
-                            <h3>לחודש</h3>
-                        </div> */}
-                        <div className='sub-description'>
-                            <p>התחייבות לחצי שנה</p>
-                            <p>מסגרת אימוני כח מלאה</p>
-                            <p>עם ליווי, מעקב ותכנית אישית</p>
-                            
-                        </div>
-                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
-                        <div className="page-button">
-                            <button
-                                aria-label="קישור לואצאפ עם מאמן"
-                                onClick={() => {
-                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי התחייבות לחצי שנה בעלות 400 שקלים לחודש";
-                                    window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
-                                }}
-                            >
-                                לבחירה לחצו כאן
-                            </button>
-                        </div>
-                    </div>
-
-                     <div className="sub-card">
-                        <h1>Commit</h1>
-                        {/* <div className="price">
-                            <h1>300 ש"ח</h1>
-                            <h3>לחודש</h3>
-                        </div> */}
-                        <div className='sub-description'>
-                            <p>התחייבות לשנה</p>
-                            <p>מסגרת אימוני כח מלאה</p>
-                            <p>עם ליווי, מעקב ותכנית אישית</p>
-                            
-                        </div>
-                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
-                        <div className="page-button">
-                            <button
-                                aria-label="קישור לואצאפ עם מאמן"
-                                onClick={() => {
-                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי התחייבות לשנה בעלות 300 שקלים לחודש";
-                                    window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
-                                }}
-                            >
-                                לבחירה לחצו כאן
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="sub-card">
-                        <h1>Access Only</h1>
-                        <h2>למתאמנים מנוסים, ללא ליווי מאמן</h2>
-                        {/* <div className="price">
-                            <h1>250 ש"ח</h1>
-                            <h3>לחודש</h3>
-                        </div> */}
-                        {/* <p className='side-note'>מתחדש אוטומטית באשראי</p>
-                        <p className='side-note'>ניתן לבטל בהתראה של 30 יום מראש</p> */}
-                        <div className="page-button">
-                            <button
-                                aria-label="קישור לואצאפ עם מאמן"
-                                onClick={() => {
-                                    const msg = "שלום, אני מעוניין להצטרף עם מנוי 250 שקלים לחודש";
-                                    window.open(WhatsappLink + encodeURIComponent(msg), "_blank");
-                                }}
-                            >
-                                לבחירה לחצו כאן
-                            </button>
-                        </div>
-                    </div> 
+                                לפרטים נוספים
+                                <span aria-hidden="true">←</span>
+                            </a>
+                        </article>
+                    ))}
                 </div>
-            </BackgroundImage>
+            </div>
         </div>
     );
-};
-
-export default Subscriptions;
+}

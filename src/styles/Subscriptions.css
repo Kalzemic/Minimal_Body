@@ -1,0 +1,227 @@
+.subscriptions-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 110px 5%;
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.92)
+        ),
+        url("/minimal_body_1.png") center / cover no-repeat;
+
+    color: white;
+}
+
+.subscriptions-container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.subscriptions-header {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.subscriptions-header h2 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 14px;
+    color: white;
+}
+
+.subscriptions-header h2 span {
+    color: #ff7b00;
+}
+
+.subscriptions-header p {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Grid */
+
+.subscriptions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Cards */
+
+.subscription-card {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 26px;
+    min-width: 0;
+
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.subscription-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 123, 0, 0.5);
+    background: #171717;
+}
+
+.subscription-featured {
+    border-color: rgba(255, 123, 0, 0.65);
+    background: rgba(25, 19, 14, 0.94);
+}
+
+/* Card header */
+
+.subscription-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.subscription-card h3 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: white;
+}
+
+.subscription-commitment {
+    color: #ff7b00;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.subscription-description {
+    color: #aaa;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 26px 0;
+    min-height: 3.4em;
+}
+
+/* Features */
+
+.subscription-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+.subscription-features > div {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.subscription-check {
+    color: #ff7b00;
+    font-weight: 800;
+}
+
+/* CTA */
+
+.subscription-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+    margin-top: auto;
+    padding: 15px 12px;
+    box-sizing: border-box;
+
+    background: #242424;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    transition: background 0.25s, color 0.25s;
+}
+
+.subscription-button:hover {
+    background: #ff7b00;
+    color: #111;
+}
+
+.subscription-featured .subscription-button {
+    background: #ff7b00;
+    color: #111;
+    border-color: #ff7b00;
+}
+
+.subscription-featured .subscription-button:hover {
+    background: #ff963b;
+}
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+    .subscriptions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .subscriptions-page {
+        padding: 75px 20px;
+    }
+
+    .subscriptions-header {
+        margin-bottom: 40px;
+    }
+
+    .subscriptions-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .subscription-card {
+        padding: 28px 24px;
+    }
+
+    .subscription-description {
+        min-height: 0;
+        margin: 20px 0;
+    }
+
+    .subscription-features {
+        margin-bottom: 30px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .subscription-card,
+    .subscription-button {
+        transition: none;
+    }
+
+    .subscription-card:hover {
+        transform: none;
+    }
+}

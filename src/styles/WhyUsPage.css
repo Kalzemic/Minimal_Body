@@ -1,0 +1,121 @@
+.whyus-page {
+    width: 100%;
+    padding: 120px 6%;
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.92)
+        ),
+        url("/minimal_body_4.png") center / cover no-repeat;
+
+    color: white;
+}
+
+.whyus-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+    align-items: start;
+}
+
+.whyus-heading {
+    position: sticky;
+    top: 140px;
+}
+
+.whyus-heading h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(3rem, 5vw, 6rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 0;
+    color: white;
+}
+
+.whyus-heading h2 span {
+    display: block;
+    color: #ff7b00;
+}
+
+.whyus-heading p {
+    color: #aaa;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.whyus-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.whyus-item {
+    display: flex;
+    gap: 25px;
+    padding: 28px 0;
+    border-bottom: 1px solid #333;
+    transition: padding 0.3s ease;
+}
+
+.whyus-item:first-child {
+    border-top: 1px solid #333;
+}
+
+.whyus-item:hover {
+    padding-right: 12px;
+}
+
+.whyus-number {
+    font-family: "Montserrat", sans-serif;
+    color: #ff7b00;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding-top: 8px;
+}
+
+.whyus-item-text h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.whyus-item-text p {
+    color: #999;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .whyus-page {
+        padding: 80px 6%;
+    }
+
+    .whyus-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .whyus-heading {
+        position: static;
+    }
+
+    .whyus-heading h2 {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .whyus-item {
+        padding: 24px 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whyus-item {
+        transition: none;
+    }
+}

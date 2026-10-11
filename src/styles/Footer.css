@@ -1,0 +1,168 @@
+.site-footer {
+    width: 100%;
+    background: #010101;
+    color: white;
+    padding: 75px 6% 25px;
+    box-sizing: border-box;
+    border-top: 1px solid #202020;
+}
+
+.footer-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 70px;
+}
+
+/* Brand */
+
+.footer-brand h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin: 0 0 15px;
+    color: white;
+}
+
+.footer-brand h2 span {
+    color: #ff7b00;
+}
+
+.footer-brand p {
+    color: #999;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Information */
+
+.footer-info,
+.footer-location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-info h3,
+.footer-location h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 8px;
+}
+
+.footer-info a,
+.footer-location a {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    transition: color 0.25s;
+}
+
+.footer-info a:hover,
+.footer-location a:hover {
+    color: #ff7b00;
+}
+
+.footer-location a span {
+    display: block;
+}
+
+/* Bottom */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding-top: 25px;
+    border-top: 1px solid #202020;
+}
+
+.footer-bottom > span {
+    color: #777;
+    font-size: 0.8rem;
+}
+
+/* ArchWeb credit */
+
+.footer-credit {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #777;
+    text-decoration: none;
+
+    transition: color 0.25s;
+}
+
+.footer-credit strong {
+    color: #ff7b00;
+    font-weight: 700;
+    transition: color 0.25s;
+}
+
+.footer-credit-arrow {
+    font-size: 0.9rem;
+    transition: transform 0.25s;
+}
+
+.footer-credit:hover {
+    color: white;
+}
+
+.footer-credit:hover strong {
+    color: white;
+}
+
+.footer-credit:hover .footer-credit-arrow {
+    transform: translate(3px, -3px);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 55px 24px 25px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-bottom: 45px;
+    }
+
+    .footer-brand h2 {
+        font-size: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-credit,
+    .footer-credit strong,
+    .footer-credit-arrow,
+    .footer-info a,
+    .footer-location a {
+        transition: none;
+    }
+}

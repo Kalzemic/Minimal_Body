@@ -1,0 +1,119 @@
+.faq-page {
+    background: #010101;
+    color: white;
+    padding: 100px 6%;
+}
+
+.faq-container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    gap: clamp(40px, 6vw, 100px);
+}
+
+/* Video */
+
+.faq-video-container {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-video {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    max-height: 600px;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+/* Questions */
+
+.faq-content {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+}
+
+.faq-title {
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 800;
+    margin: 0 0 40px;
+    color: white;
+}
+
+.faq-title span {
+    color: #ff7b00;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    background: transparent;
+    border: none;
+    padding: 24px 0;
+    color: white;
+
+    font-family: 'Heebo', sans-serif;
+    font-size: clamp(1rem, 1.25vw, 1.2rem);
+    font-weight: 500;
+    text-align: right;
+    cursor: pointer;
+
+    transition: color 0.25s ease;
+}
+
+.faq-question:hover,
+.faq-item.active .faq-question {
+    color: #ff7b00;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ff7b00;
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+}
+
+.faq-item.active .faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.faq-answer-inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.faq-answer p {
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 0 24px;
+}

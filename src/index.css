@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
 :root {
-  font-family: 'Secular One', sans-serif;
+  font-family: 'Montserrat', 'Heebo', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden;
@@ -12,6 +13,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+:lang(he) {
+  font-family: 'Heebo', sans-serif;
+}
+
+:lang(en) {
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -30,6 +40,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: inherit;
 
 }
 
@@ -37,7 +48,12 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
