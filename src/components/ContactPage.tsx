@@ -45,8 +45,7 @@ export default function ContactPage() {
                 }),
             });
 
-            // no-cors doesn't expose Zapier's response.
-            // This confirms only that fetch completed.
+
             setStatus("הבקשה נשלחה. תודה!");
             setCooldown(60);
 
