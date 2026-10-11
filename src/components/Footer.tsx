@@ -15,7 +15,7 @@ export default function Footer() {
                     <div className="footer-info">
                         <h3>דברו איתנו</h3>
 
-                        <a href="tel:+972525772886">
+                        <a href="tel:+972509333767">
                             052-577-2886
                         </a>
 

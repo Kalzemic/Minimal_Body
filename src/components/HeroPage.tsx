@@ -1,7 +1,7 @@
 import "../styles/HeroPage.css";
 
 export default function HeroPage() {
-    const WhatsappLink = "https://wa.me/972525772886";
+    const WhatsappLink = "https://wa.me/972509333767";
 
     return (
         <div className="hero-content" dir="rtl">

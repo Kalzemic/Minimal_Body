@@ -10,7 +10,7 @@ import AccessibilityMenu from './components/AccessibilityMenu';
 
 function App() {
 
-  const whatsappLink = "https://wa.me/972525772886";
+  const WhatsappLink = "https://wa.me/972509333767";
   const InstaLink = "https://www.instagram.com/minimalbodyil/";
 
   return (
@@ -26,7 +26,7 @@ function App() {
       </div>
       <div className="social-media">
         <button className="Whatsapp-button" aria-label="קישור לואצאפ עם מאמן"
-          onClick={() => window.open(whatsappLink, "_blank")}>
+          onClick={() => window.open(WhatsappLink, "_blank")}>
 
           <FaWhatsapp className="whatsapp-icon" />
         </button>
